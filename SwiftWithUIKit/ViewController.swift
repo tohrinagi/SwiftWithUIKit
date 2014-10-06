@@ -3,7 +3,7 @@
 //  SwiftWithUIKit
 //
 //  Created by tohrinagi on 2014/10/07.
-//  Copyright (c) 2014年 tohrinagi. All rights reserved.
+//  Copyright (c) 2014 tohrinagi. All rights reserved.
 //
 
 import UIKit

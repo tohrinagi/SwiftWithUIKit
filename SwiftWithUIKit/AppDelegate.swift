@@ -3,7 +3,7 @@
 //  SwiftWithUIKit
 //
 //  Created by tohrinagi on 2014/10/07.
-//  Copyright (c) 2014年 tohrinagi. All rights reserved.
+//  Copyright (c) 2014 tohrinagi. All rights reserved.
 //
 
 import UIKit
@@ -12,10 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var viewController: ViewController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen().bounds )
+        self.viewController = ViewController()
+        self.window?.rootViewController = self.viewController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
