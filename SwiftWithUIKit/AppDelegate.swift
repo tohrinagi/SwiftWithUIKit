@@ -12,14 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var viewController: ViewController?
+    var mainMenuViewController: MainMenuViewController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen().bounds )
-        self.viewController = ViewController()
-        self.window?.rootViewController = self.viewController
+        // アプリが立ち上がったとき最初のViewControllerを作成する
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds )
+        self.mainMenuViewController = MainMenuViewController()
+        self.window?.rootViewController = self.mainMenuViewController
         self.window?.makeKeyAndVisible()
         return true
     }

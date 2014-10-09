@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E4764B5D19E309BA00982C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4764B5C19E309BA00982C49 /* AppDelegate.swift */; };
-		E4764B5F19E309BA00982C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4764B5E19E309BA00982C49 /* ViewController.swift */; };
 		E4764B6419E309BA00982C49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4764B6319E309BA00982C49 /* Images.xcassets */; };
 		E4764B6719E309BA00982C49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4764B6519E309BA00982C49 /* LaunchScreen.xib */; };
 		E4764B7319E309BA00982C49 /* SwiftWithUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4764B7219E309BA00982C49 /* SwiftWithUIKitTests.swift */; };
+		E4EA879119E591140084862B /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA879019E591140084862B /* MainMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,12 @@
 		E4764B5719E309BA00982C49 /* SwiftWithUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWithUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4764B5B19E309BA00982C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4764B5C19E309BA00982C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4764B5E19E309BA00982C49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4764B6319E309BA00982C49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4764B6619E309BA00982C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E4764B6C19E309BA00982C49 /* SwiftWithUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWithUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4764B7119E309BA00982C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4764B7219E309BA00982C49 /* SwiftWithUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWithUIKitTests.swift; sourceTree = "<group>"; };
+		E4EA879019E591140084862B /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				E4764B5C19E309BA00982C49 /* AppDelegate.swift */,
-				E4764B5E19E309BA00982C49 /* ViewController.swift */,
 				E4764B6319E309BA00982C49 /* Images.xcassets */,
 				E4764B6519E309BA00982C49 /* LaunchScreen.xib */,
 				E4764B5A19E309BA00982C49 /* Supporting Files */,
+				E4EA879019E591140084862B /* MainMenuViewController.swift */,
 			);
 			path = SwiftWithUIKit;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4764B5F19E309BA00982C49 /* ViewController.swift in Sources */,
+				E4EA879119E591140084862B /* MainMenuViewController.swift in Sources */,
 				E4764B5D19E309BA00982C49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +393,7 @@
 				E4764B7819E309BA00982C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4764B7919E309BA00982C49 /* Build configuration list for PBXNativeTarget "SwiftWithUIKitTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +402,7 @@
 				E4764B7B19E309BA00982C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
