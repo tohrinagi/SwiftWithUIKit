@@ -14,12 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var mainMenuViewController: MainMenuViewController?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // アプリが立ち上がったとき最初のViewControllerを作成する
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds )
         self.mainMenuViewController = MainMenuViewController()
-        self.window?.rootViewController = self.mainMenuViewController
+        self.window?.rootViewController = UINavigationController(rootViewController: self.mainMenuViewController!)
         self.window?.makeKeyAndVisible()
         return true
     }
