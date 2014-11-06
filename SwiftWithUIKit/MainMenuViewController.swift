@@ -10,7 +10,7 @@ import UIKit
 
 class MainMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var itemName = ["Practice1"]
+    var itemName = ["Practice1","Plactice2"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell( style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
-        cell.textLabel?.text = itemName[indexPath.row]
+        cell.textLabel.text = itemName[indexPath.row]
         return cell
     }
 
@@ -41,6 +41,16 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.navigationController?.pushViewController(Practice1ViewController(), animated: true)
+        println( indexPath.row )
+        switch indexPath.row {
+        case 0:
+            self.navigationController?.pushViewController(Practice1ViewController(), animated: true)
+        case 1:
+            var viewCon = Practice2ViewController()
+            viewCon.configureCredential()
+            self.navigationController?.pushViewController(viewCon, animated: true)
+        default:
+            break
+        }
     }
 }
